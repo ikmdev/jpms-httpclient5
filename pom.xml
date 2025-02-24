@@ -14,7 +14,7 @@
 	<groupId>dev.ikm.jpms</groupId>
 	<artifactId>httpclient5</artifactId>
 	<packaging>jar</packaging>
-	<version>5.4.2-r1-SNAPSHOT</version>
+	<version>5.4.2-r1</version>
 	<description>
 		Builds the httpclient5. 
 	</description>
