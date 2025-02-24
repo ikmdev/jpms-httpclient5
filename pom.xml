@@ -27,7 +27,7 @@
 		<!-- transitive dependency versions -->
 		<jpms-httpcore5.version>5.3.3-r1</jpms-httpcore5.version>
 		<jpms-httpcore5-h2.version>5.3.3-r2</jpms-httpcore5-h2.version>
-		<slf4j-api.version>2.1.0-alpha1</slf4j-api.version>
+		<slf4j-api.version>2.0.16</slf4j-api.version>
 
 		<maven.moditect.plugin>1.2.2.Final</maven.moditect.plugin>
 	</properties>
@@ -48,11 +48,13 @@
             <version>${jpms-httpcore5.version}</version>
         </dependency>
 
+
 		<dependency>
             <groupId>dev.ikm.jpms</groupId>
             <artifactId>httpcore5-h2</artifactId>
             <version>${jpms-httpcore5-h2.version}</version>
         </dependency>
+
 
 		<dependency>
 			<groupId>org.slf4j</groupId>
@@ -72,6 +74,7 @@
             <groupId>dev.ikm.jpms</groupId>
             <artifactId>httpcore5-h2</artifactId>
         </dependency>
+
 
 		<dependency>
 			<groupId>org.slf4j</groupId>
@@ -158,6 +161,22 @@
 						</configuration>
 					</execution>
 				</executions>
+			</plugin>
+			 <plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-jdeps-plugin</artifactId>
+				<version>3.1.2</version>
+				<!-- <executions>
+				<execution>
+					<goals>
+					<goal>jdkinternals</goal> 
+					<goal>test-jdkinternals</goal> 
+					</goals>
+				</execution>
+				</executions> -->
+				<configuration>
+				<multiRelease>9</multiRelease> <!-- Check this out -->
+				</configuration>
 			</plugin>			
 
 			<plugin>
@@ -180,12 +199,12 @@
                                         <artifactId>httpclient5</artifactId>
 										<version>${core.artifact.version}</version>
 									</artifact>
-									<moduleInfo>
-										<name>dev.ikm.jpms.httpclient5</name>
-										<open>true</open>
-										<exports>*;</exports>
-									</moduleInfo>
-								
+									<moduleInfoSource>
+										module dev.ikm.jpm.httpclient5 {
+											requires dev.ikm.jpms.httpcore5.h2;
+											requires transitive org.slf4j;
+										}
+									</moduleInfoSource>
 								</module>
 							</modules>
 						</configuration>
