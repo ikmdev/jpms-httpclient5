@@ -14,19 +14,19 @@
 	<groupId>dev.ikm.jpms</groupId>
 	<artifactId>httpclient5</artifactId>
 	<packaging>jar</packaging>
-	<version>5.4.2-r2-AR-283_update-deps-SNAPSHOT</version>
+	<version>5.4.3-r2-AR-283_update-deps-SNAPSHOT</version>
 	<description>
 		Builds the httpclient5. 
 	</description>
 
 	<properties>
 		<!-- change release here-->
-		<core.artifact.version>5.4.2</core.artifact.version>
-		<core.artifact.release>r1</core.artifact.release>
+		<core.artifact.version>5.4.3</core.artifact.version>
+		<core.artifact.release>r2</core.artifact.release>
 
 		<!-- transitive dependency versions -->
-		<jpms-httpcore5.version>5.3.3-r1</jpms-httpcore5.version>
-		<jpms-httpcore5-h2.version>5.3.3-r2</jpms-httpcore5-h2.version>
+		<jpms-httpcore5.version>5.3.4-r2</jpms-httpcore5.version>
+		<jpms-httpcore5-h2.version>5.3.4-r3</jpms-httpcore5-h2.version>
 		<slf4j-api.version>2.0.16</slf4j-api.version>
 
 		<maven.moditect.plugin>1.2.2.Final</maven.moditect.plugin>
