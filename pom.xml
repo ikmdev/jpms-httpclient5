@@ -22,7 +22,7 @@
 	<properties>
 		<!-- change release here-->
 		<core.artifact.version>5.4.3</core.artifact.version>
-		<core.artifact.release></core.artifact.release>
+		<core.artifact.release>r3</core.artifact.release>
 
 		<!-- transitive dependency versions -->
 		<jpms-httpcore5.version>5.3.4-r2</jpms-httpcore5.version>
