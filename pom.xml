@@ -13,6 +13,7 @@
 
 	<groupId>dev.ikm.jpms</groupId>
 	<artifactId>httpclient5</artifactId>
+    <name>Apache HttpClient</name>
 	<packaging>jar</packaging>
 	<version>5.4.3-r3-SNAPSHOT</version>
 	<description>
