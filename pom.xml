@@ -27,7 +27,7 @@
 
 		<!-- transitive dependency versions -->
 		<jpms-httpcore5.version>5.3.4-r4</jpms-httpcore5.version>
-		<jpms-httpcore5-h2.version>5.3.4-r5</jpms-httpcore5-h2.version>
+		<jpms-httpcore5-h2.version>5.3.4-r1</jpms-httpcore5-h2.version>
 		<slf4j-api.version>2.0.17</slf4j-api.version>
 
 		<maven.moditect.plugin>1.2.2.Final</maven.moditect.plugin>
